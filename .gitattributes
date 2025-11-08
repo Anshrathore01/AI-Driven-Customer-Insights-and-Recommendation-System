@@ -1,0 +1,2 @@
+artifacts/model.pkl filter=lfs diff=lfs merge=lfs -text
+src/notebook/data/data.csv filter=lfs diff=lfs merge=lfs -text
