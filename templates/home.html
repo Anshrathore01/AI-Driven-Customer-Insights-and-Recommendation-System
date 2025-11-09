@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-color: #eef2f3;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .result-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>📊 Prediction Result</h2>
+        <h3>{{ prediction_text }}</h3>
+        <a href="/">🔙 Back to Home</a>
+    </div>
+</body>
+</html>
