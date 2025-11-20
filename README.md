@@ -62,3 +62,35 @@ AI-Driven-Customer-Insights-and-Recommendation-System/
 └── README.md                          # Project documentation
 
 
+## 🚀 Deploy on Hugging Face Spaces (Docker)
+
+The repository now ships with a production-ready `Dockerfile`, making it easy to deploy on [Hugging Face Spaces](https://huggingface.co/spaces) using the **Docker** runtime.
+
+1. Create a new Space and choose **Docker** as the SDK.
+2. Push this repository to the Space (or connect it as a Git submodule/mirror).
+3. The Space will automatically build the provided `Dockerfile`. The app listens on `PORT=7860` as required by Spaces.
+
+Optional metadata for the Space `README.md`:
+
+```
+---
+title: AI Customer Insights
+emoji: ⚡
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+license: mit
+---
+```
+
+### Run the same image locally
+
+```bash
+docker build -t customer-insights:latest .
+docker run -p 7860:7860 customer-insights:latest
+```
+
+Visit `http://localhost:7860` to use the UI.
+
+
