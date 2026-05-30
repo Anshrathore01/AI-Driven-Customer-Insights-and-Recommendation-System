@@ -64,8 +64,50 @@ AI-Driven-Customer-Insights-and-Recommendation-System/
 │
 └── README.md                          # Project documentation
 
+## 🚀 How to Run the App Locally (Beginner Friendly)
 
-##  Deploy on Hugging Face Spaces (Docker)
+If you are a beginner and just want to run the application natively on your computer without Docker, follow these simple steps:
+
+1. **Clone the repository** (if you haven't already):
+   ```bash
+   git clone <repository-url>
+   cd AI-Driven-Customer-Insights-and-Recommendation-System
+   ```
+
+2. **Create a Virtual Environment** (Recommended):
+   This keeps your project dependencies isolated.
+   ```bash
+   python3 -m venv venv
+   ```
+
+3. **Activate the Virtual Environment**:
+   - On **macOS/Linux**:
+     ```bash
+     source venv/bin/activate
+     ```
+   - On **Windows**:
+     ```bash
+     venv\Scripts\activate
+     ```
+
+4. **Install Required Libraries**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Run the Application**:
+   ```bash
+   python app.py
+   ```
+
+6. **Open the App in your Browser**:
+   Once the server starts, open your web browser and go to:
+   👉 **http://127.0.0.1:7860**
+
+   > 💡 **Note:** The first time you run the app, it might take **1-2 minutes** to load all the Machine Learning models (like XGBoost, CatBoost) into memory. Please wait until you see the `* Running on http://127.0.0.1:7860` message in your terminal before opening the link.
+
+
+## 🐳 Deploy on Hugging Face Spaces (Docker)
 
 The repository now ships with a production-ready `Dockerfile`, making it easy to deploy on [Hugging Face Spaces](https://huggingface.co/spaces) using the **Docker** runtime.
 
