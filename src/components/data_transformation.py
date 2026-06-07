@@ -24,7 +24,7 @@ class DataTransformation:
             logging.info("Read train and test data successfully")
 
             # Verify expected columns
-            expected_cols = ['CustomerID', 'Recency', 'Frequency', 'Monetary']
+            expected_cols = ['CustomerID', 'Recency', 'Frequency', 'Monetary', 'Target_Spend']
             for col in expected_cols:
                 if col not in train_df.columns:
                     raise CustomException(f"Column '{col}' missing in training data", sys)

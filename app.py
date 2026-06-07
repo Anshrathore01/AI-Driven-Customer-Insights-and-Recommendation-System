@@ -36,7 +36,7 @@ def predict_data():
 
         # Render results
         return render_template('home.html',
-                               prediction_text=f"Predicted Customer Value: {prediction:.2f}")
+                               prediction_text=f"Predicted Spending in Next 3 Months: ${prediction:.2f}")
 
     except Exception as e:
         return render_template('home.html',

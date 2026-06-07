@@ -24,10 +24,10 @@ class ModelTrainer:
             test_df = pd.read_csv(test_path)
 
             X_train = train_df[['Recency', 'Frequency', 'Monetary']]
-            y_train = train_df['Monetary']
+            y_train = train_df['Target_Spend']
 
             X_test = test_df[['Recency', 'Frequency', 'Monetary']]
-            y_test = test_df['Monetary']
+            y_test = test_df['Target_Spend']
 
             rf = RandomForestRegressor(random_state=42)
 
